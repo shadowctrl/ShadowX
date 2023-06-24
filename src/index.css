@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: mars;
+  src: url(/fonts/mars/Mars.ttf);
+}
+
+html,
+body {
+  /* overflow-x: hidden; */
+  font-family: poppins;
+  scroll-behavior: smooth;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
