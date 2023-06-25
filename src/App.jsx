@@ -13,11 +13,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
           path="/"
           element={
-            <>
-              {" "}
+            <div className="bg">
               <Navbar />
               <Main />
-            </>
+            </div>
           }
         />
       </Routes>
