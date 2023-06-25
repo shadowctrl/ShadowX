@@ -4,15 +4,17 @@
   align-items: center;
   color: white;
   padding: 5vh 3vw;
+  position: relative;
+  z-index: 1;
 }
 .title {
   font-family: mars;
-  font-size: 1vw;
+  font-size: 2vw;
 }
 
 .components {
   font-family: poppins;
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   padding: 0vh 2vw;
 }
 
@@ -33,25 +35,4 @@
 .components a {
   text-decoration: none;
   color: white;
-}
-
-.container {
-  /* background-color: #f5f186;
-  background-image: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%); */
-  /* margin: 0vh 2vw; */
-
-  box-shadow: -1vw 1vw 1vw black;
-  border-radius: 1vw;
-  background-color: rgb(255, 255, 255, 0.1);
-  border: 1px solid white;
-}
-
-.container h1 {
-  font-size: 5vw;
-  text-shadow: -0.2vw 0.7vw 1vw black;
-  color: white;
-}
-
-.container h1 span {
-  color: yellow;
 }
