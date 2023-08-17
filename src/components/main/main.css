@@ -1,0 +1,109 @@
+.parent_main {
+  position: relative;
+  z-index: 1;
+}
+.parent_main .container {
+  border: 1px solid white;
+  border-radius: 1.5vw;
+  box-shadow: -1vw 1vw 1vw black;
+  width: auto;
+  margin: 0vh 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  padding-bottom: 1vw;
+}
+
+.parent_main .container h1 {
+  font-size: 6vw;
+  color: white;
+  text-shadow: -1vw 1vw 1vw black;
+  padding: 0vh 2vw;
+}
+
+.parent_main .container h1 span {
+  color: yellow;
+  font-weight: 900;
+  opacity: 0;
+  animation: slideIn 0.5s 1.3s linear forwards;
+}
+
+.slide {
+  display: flex;
+  gap: 1.5vw;
+  list-style-type: none;
+}
+.slide li {
+  opacity: 0;
+}
+.slide li:nth-child(1) {
+  animation: slideIn 0.3s linear forwards;
+}
+.slide li:nth-child(2) {
+  animation: slideIn 0.3s 0.3s linear forwards;
+}
+.slide li:nth-child(3) {
+  animation: slideIn 0.3s 0.6s linear forwards;
+}
+.slide li:nth-child(4) {
+  animation: slideIn 0.3s 0.9s linear forwards;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0.5;
+    transform: translateX(-5vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0vh);
+  }
+}
+
+.container2 {
+  padding: 10vh 0vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Fasthand;
+}
+.container2 .static-txt {
+  color: #fff;
+  font-size: 4vw;
+  font-weight: 500;
+}
+
+.container2 .dynamic-txts {
+  margin-left: 1vw;
+  height: 13vh;
+  line-height: 13vh;
+  overflow: hidden;
+}
+
+.dynamic-txts li {
+  color: yellow;
+  list-style: none;
+  font-size: 4vw;
+  font-weight: 600;
+  position: relative;
+  top: 0;
+  padding-left: 0.5vw;
+  animation: slide 8s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -53vh;
+  }
+}
+
+.dynamic-txts li span {
+  position: relative;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+  }
+}

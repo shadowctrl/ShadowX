@@ -12,6 +12,10 @@
   font-size: 2vw;
 }
 
+.title h1 {
+  display: flex;
+  align-items: center;
+}
 .components {
   font-family: poppins;
   font-size: 1.2vw;
@@ -21,6 +25,7 @@
 .components ul {
   list-style-type: none;
   display: flex;
+  align-items: center;
 }
 .components li {
   margin-right: 3vw;
@@ -35,4 +40,12 @@
 .components a {
   text-decoration: none;
   color: white;
+}
+
+.login {
+  position: relative;
+  padding: 0.5vh 1vw;
+  border-radius: 1vw;
+  background-color: rgb(0, 0, 0, 0.8);
+  cursor: pointer;
 }

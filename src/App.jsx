@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Error from "./error";
 import Main from "./components/main/main";
 import Navbar from "./components/navbar/navbar";
+import Login from "./login-comp/login";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -17,6 +18,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               <Navbar />
               <Main />
             </div>
+          }
+        />
+        <Route
+          path="login"
+          element={
+            <>
+              <Login />
+            </>
           }
         />
       </Routes>

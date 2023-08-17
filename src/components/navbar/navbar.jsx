@@ -1,8 +1,6 @@
 import React from "react";
 import "./navbar.css";
-import animation from "../../assets/protection.json";
-import LogoAnime from "../../assets/logo.json";
-import ValuableAnime from "../../assets/valuable.json";
+import X from "../../assets/x.json";
 import Lottie from "lottie-react";
 
 const Navbar = () => {
@@ -26,10 +24,31 @@ const Navbar = () => {
             <li>
               <a href="/Contact Us">Contact Us</a>
             </li>
+            <h1
+              className="login"
+              onClick={() => window.open("/login", "_blank")}
+            >
+              Login
+            </h1>
           </ul>
         </div>
+
         <div className="title">
-          <h1>ShadowX</h1>
+          <h1>
+            Shadow{" "}
+            <Lottie
+              animationData={X}
+              loop={4}
+              style={{
+                scale: "3.3",
+                width: "2.5vw",
+                height: "5vh",
+                transform: "rotate(45deg)",
+              }}
+            >
+              {" "}
+            </Lottie>
+          </h1>
         </div>
       </div>
     </div>

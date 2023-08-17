@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&family=Fira+Code&family=Source+Code+pro&family=Foldit&family=Lobster&family=Fasthand&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,19 +9,24 @@
 
 html,
 body {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   font-family: poppins;
   scroll-behavior: smooth;
-  /* background: radial-gradient(
+  background: radial-gradient(
     circle at 24.1% 68.8%,
     rgb(50, 50, 50) 0%,
     rgb(0, 0, 0) 99.4%
-  ); */
+  );
+
+  /* background-color: black; */
+  height: 100%;
+  width: 100%;
 }
 .bg {
   position: relative;
   background-color: black;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 .bg::before {
   content: "";
@@ -29,7 +34,7 @@ body {
   background-image: url("./assets//bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   opacity: 0.6;
 }
